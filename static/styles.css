@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+    margin-top: 1%;
+    padding: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f2e639;
+  color: black;
+}
+
+hr
+{
+    border: none;
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+#mission {
+    width: 400px;
+    height: 200px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1%;
+    background: #f2e639;
+}
+
+.index_blocks
+{
+    text-align: center;
+}
+
+.person {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 300px;
+    padding: 20px;
+}
+
+.officers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.playlist-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+#temp-image {
+    height: 300px;
+    width: 300px;
+}
