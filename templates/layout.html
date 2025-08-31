@@ -16,10 +16,17 @@
     </head>
 
 <div class="topnav">
-    <a class="active" href="/">About Us</a>
-    <a href="/officers">Officers</a>
-    <a href="/playlists">Playlists</a>
-    <a href="/join">Join</a>
+    <a href="/" class="{% if current_page == 'index' %}active{% endif %}">About Us</a>
+    <a href="/officers" class="{% if current_page == 'officers' %}active{% endif %}">Officers</a>
+    
+    <div class="dropdown">
+        <a href="/playlists" class="{% if current_page == 'playlists' %}active{% endif %}">Playlists</a>
+        <div class="dropdown-content">
+            <a href="/playlists-2024">2024</a>
+        </div>
+    </div>
+
+    <!--<a href="/join" class="{% if current_page == 'join' %}active{% endif %}">Join</a>-->
 </div>
 
     <body>
@@ -29,18 +36,23 @@
         </main>
 
     </body>
-
+<p></p>
 <hr>
 
 <p>
-    Instagram: <a href="https://www.instagram.com/musicloversclub.cu/">@musicloversclub.cu</a>
+    musicloversclub.cu@gmail.com
 </p>
 <p>
-    Email: musicloversclub.cu@gmail.com
+    <a href="https://www.instagram.com/musicloversclub.cu/">Instagram</a>
 </p>
 <p>
-    Spotify: <a href="https://open.spotify.com/user/31dv6gvv7gelg3ueo3dqavb7qyfa?si=1z8TISpCRqW4cgRmI_2MgA">Music Lovers Club at Cornell</a>
+    <a href="https://open.spotify.com/user/31dv6gvv7gelg3ueo3dqavb7qyfa?si=1z8TISpCRqW4cgRmI_2MgA">Spotify</a>
 </p>
-<p>YouTube: <a href="https://m.youtube.com/@musicloversclubatcornell">Music Lovers Club</a></p>
+<p>
+    <a href="https://m.youtube.com/@musicloversclubatcornell">YouTube</a>
+</p>
+<p>
+    <a href="https://discord.gg/nC9vQ6dx">Discord</a>
+</p>
 
 </html>

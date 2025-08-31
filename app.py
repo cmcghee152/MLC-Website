@@ -18,23 +18,23 @@ def after_request(response):
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template('index.html', current_page="index")
 
 @app.route("/join", methods=["GET", "POST"])
 def join():
-    return render_template('join.html')
+    return render_template('join.html', current_page="join")
 
 @app.route("/officers", methods=["GET", "POST"])
 def officers():
-    return render_template('officers.html')
+    return render_template('officers.html', current_page="officers")
 
 @app.route("/playlists", methods=["GET", "POST"])
 def playlists():
-    return render_template('playlists.html')
+    return render_template('playlists.html', current_page="playlists")
 
 @app.route("/playlists-2024", methods=["GET", "POST"])
 def playlists_2024():
-    return render_template('playlists-2024.html')
+    return render_template('playlists-2024.html', current_page="playlists")
 
 if __name__ == '__main__':
     app.run(debug=True)

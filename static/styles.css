@@ -5,7 +5,7 @@ h1 {
 }
 
 .topnav {
-  overflow: hidden;
+  overflow: visible;
   background-color: #333;
 }
 
@@ -19,7 +19,7 @@ h1 {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #f2e639;;
   color: black;
 }
 
@@ -79,4 +79,78 @@ hr
 #temp-image {
     height: 300px;
     width: 300px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  background-color: #f1f1f1;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+#benefits {
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#join-us {
+    text-align: center;
+    border-style: solid;
+    border-color: #f2e639;
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#join-box {
+    text-align: center;
+}
+
+#button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#button:hover {
+    box-shadow: 2px 2px 5px #f2e639;
 }
